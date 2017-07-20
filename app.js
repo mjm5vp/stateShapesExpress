@@ -8,7 +8,10 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var michiganSlides = require('./routes/michigan/michiganSlides');
 var maineSlides = require('./routes/maine/maineSlides');
-var hello = require('./routes/hello');
+var kentuckySlides = require('./routes/kentucky/kentuckySlides');
+var minnesotaSlides = require('./routes/minnesota/minnesotaSlides');
+var masonDixonSlides = require('./routes/masonDixon/masonDixonSlides');
+
 
 var app = express();
 
@@ -27,7 +30,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/michiganSlides', michiganSlides);
 app.use('/maineSlides', maineSlides);
-app.use('/hello', hello);
+app.use('/kentuckySlides', kentuckySlides);
+app.use('/minnesotaSlides', minnesotaSlides);
+app.use('/masonDixonSlides', masonDixonSlides);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
