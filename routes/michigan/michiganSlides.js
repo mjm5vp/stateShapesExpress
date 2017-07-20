@@ -56,17 +56,17 @@ router.get('/', function(req, res, next) {
       },
       {
         description: "In the treaty ending the Revolution, Benjamin Franklin negotiated the inclusion of Isle Royale (known to be rich in copper) within the boundaries of the United States.",
-        zoom: 8,
+        zoom: 7,
         pitch: 40,
         bearing: -5,
-        center: [-88.90432906362237, 47.95125916743743],
+        center: [-88.90432906362237, 46.95125916743743],
         showLayer: {
           show: false,
           layers: []
         },
         hideLayer: {
           hide: true,
-          layers: ["upperPen","isleRoyale"]
+          layers: ["upperPen"]
         }
       },
       {
@@ -76,8 +76,8 @@ router.get('/', function(req, res, next) {
         bearing: -15,
         center: [-85.21811446437545, 44.2239073390445],
         showLayer: {
-          show: false,
-          layers: []
+          show: true,
+          layers: ["fullMichigan"]
         },
         hideLayer: {
           hide: false,

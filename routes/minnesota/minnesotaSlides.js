@@ -42,12 +42,12 @@ router.get('/', function(req, res, next) {
       {
         description: "But there was a problem. The Mississippi doesn’t extend as far north as Lake of the Woods",
         zoom: 6,
-        pitch: 40,
-        bearing: 0,
-        center: [-93.14005326419331, 45.54501620814125],
+        pitch: 80,
+        bearing: 160,
+        center: [-94.93857907968882, 49.0728843970945],
         showLayer: {
           show: true,
-          layers: ["lakeOfTheWoods", "mississippiRiver"]
+          layers: ["lakeOfTheWoods"]
         },
         hideLayer: {
           hide: false,
@@ -71,10 +71,10 @@ router.get('/', function(req, res, next) {
       },
       {
         description: "This time, the boundary at the northwest point of Lake of the Woods was described as a line due north or south to the 49th parallel and then due west along that parallel to the Rocky Mountains.",
-        zoom: 9,
+        zoom: 8.5,
         pitch: 20,
         bearing: 5,
-        center: [-95.25046917172877, 49.01337250710094],
+        center: [-95.12570805343837, 49.33943468339112],
         showLayer: {
           show: false,
           layers: []
