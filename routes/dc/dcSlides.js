@@ -191,7 +191,7 @@ router.get('/', function(req, res, next) {
         }
       },
       {
-        description: `In 1846, the residents of the District south of the Potomac petitioned Congress for retrocession to Virginia. Congress, with bigger fish to fry (it was frying Mexico, at the moment), casually granted their request.`,
+        description: `In 1846, the residents of the District south of the Potomac petitioned Congress for retrocession to Virginia. Congress, with bigger fish to fry (Mexico), casually granted their request.`,
         zoom: 10,
         pitch: 20,
         bearing: 0,
