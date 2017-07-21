@@ -127,7 +127,7 @@ router.get('/', function(req, res, next) {
         },
         hideLayer: {
           hide: true,
-          layers: []
+          layers: ["dcBadSquare"]
         }
       },
       {
