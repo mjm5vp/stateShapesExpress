@@ -12,6 +12,7 @@ var kentuckySlides = require('./routes/kentucky/kentuckySlides');
 var minnesotaSlides = require('./routes/minnesota/minnesotaSlides');
 var masonDixonSlides = require('./routes/masonDixon/masonDixonSlides');
 var dcSlides = require('./routes/dc/dcSlides');
+var georgiaSlides = require('./routes/georgia/georgiaSlides');
 
 
 var app = express();
@@ -35,6 +36,7 @@ app.use('/kentuckySlides', kentuckySlides);
 app.use('/minnesotaSlides', minnesotaSlides);
 app.use('/masonDixonSlides', masonDixonSlides);
 app.use('/dcSlides', dcSlides);
+app.use('/georgiaSlides', georgiaSlides);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

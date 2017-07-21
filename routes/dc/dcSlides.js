@@ -176,7 +176,7 @@ router.get('/', function(req, res, next) {
         }
       },
       {
-        description: `Congress was considering a prohibition in the District of Columbia of one of Alexandria’s traditional industries, the slave trade.  The Alexandria city square was one of the largest slave trade centers in the country`,
+        description: `In the mid 1800's, Congress was considering a prohibition in the District of Columbia of one of Alexandria’s traditional industries, the slave trade.  The Alexandria city square was one of the largest slave trade centers in the country`,
         zoom: 16.6,
         pitch: 40,
         bearing: -5,

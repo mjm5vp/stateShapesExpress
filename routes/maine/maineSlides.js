@@ -10,65 +10,81 @@ router.get('/', function(req, res, next) {
   res.json(
     [
       {
-    description: "Maine description 0",
-    zoom: 9,
-    pitch: 60,
-    bearing: 0,
-    center: [-77.03369140625,46.13417004624326],
-    showLayer: {
-      show: false,
-      layers: []
-    },
-    hideLayer: {
-      hide: false,
-      layers: []
-    }
-  },
-  {
-    description: "1 Maine",
-    zoom: 8,
-    pitch: 40,
-    bearing: 10,
-    center: [-73.49609375,41.73852846935917],
-    showLayer: {
-      show: true,
-      layers: ["toledoPoint"]
-    },
-    hideLayer: {
-      hide: false,
-      layers: []
-    }
-  },
-  {
-    description: "Maine 2",
-    zoom: 7,
-    pitch: 50,
-    bearing: -10,
-    center: [-75.27587890625,46.042735653846506],
-    showLayer: {
-      show: true,
-      layers: ["upperPen"]
-    },
-    hideLayer: {
-      hide: true,
-      layers: ["toledoPoint"]
-    }
-  },
-  {
-    description: "3rd Maine",
-    zoom: 9,
+    description: "Maine’s northern border was redefined in the 1783 Treaty of Paris, which ended the Revolution. In the wake of American independence, the two sides had to stipulate what constituted the United States.",
+    zoom: 6,
     pitch: 60,
     bearing: 20,
-    center: [-73.84765625,46.01222384063236],
+    center: [-68.78940604142737, 45.74638559529524],
     showLayer: {
       show: false,
       layers: []
     },
     hideLayer: {
       hide: true,
-      layers: ["upperPen"]
+      layers: ["maineLine"]
     }
-  }
+  },
+  {
+    description: "The northeast corner of the new nation, according to the treaty, was to be a line drawn due north from the source of the St. Croix River to the crest of the highlands that divide the rivers that flow to the St. Lawrence from those that flow to the Atlantic Ocean.",
+    zoom: 8,
+    pitch: 70,
+    bearing: 0,
+    center: [ -67.781338, 45.943390],
+    showLayer: {
+      show: true,
+      layers: ["maineLine"]
+    },
+    hideLayer: {
+      hide: false,
+      layers: []
+    }
+  },
+  {
+    description: "This line was to continue westward until reaching the northwesternmost head of the Connecticut River. ",
+    zoom: 6.7,
+    pitch: 60,
+    bearing: 20,
+    center: [-71.49631375865667, 44.987780268131644],
+    showLayer: {
+      show: false,
+      layers: []
+    },
+    hideLayer: {
+      hide: true,
+      layers: ["maineLine"]
+    }
+  },
+  {
+    description: "But this definition does not describe Maine’s current northern border. A long dispute ensued over which highlands divide the rivers flowing to the St. Lawrence from those flowing to the Atlantic.",
+    zoom: 7,
+    pitch: 20,
+    bearing: 0,
+    center: [-69.44052281753163, 46.627542923434504],
+    showLayer: {
+      show: false,
+      layers: []
+    },
+    hideLayer: {
+      hide: false,
+      layers: []
+    }
+  },
+  {
+      description: "Fifty years passed until this dispute was finally settled under the Webster-Ashburton Treaty.  The border is a compromise between each of the British and American's wildly exaggerated claims",
+      zoom: 6.5,
+      pitch: 30,
+      bearing: -10,
+      center: [-69.44052281753163, 46.627542923434504],
+      showLayer: {
+        show: false,
+        layers: []
+      },
+      hideLayer: {
+        hide: false,
+        layers: []
+      }
+    }
+
     ]
 );
 });
